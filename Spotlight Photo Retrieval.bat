@@ -4,7 +4,7 @@ cd %UserProfile%\Pictures\
 'makes a directory name Spotlight_photos does nothing if the folder already exists
 mkdir Spotlight_Photos
 'Copies the files from where windows stores them. Excludes any files less than 100kb
-Robocopy %UserProfile%\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets "%UserProfile%\Pictures\Spotlight_Photos" /xf /MIN:10000
+Robocopy %UserProfile%\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets "%UserProfile%\Pictures\Spotlight_Photos" /xf /MIN:100000
 C:
 cd %UserProfile%\Pictures\Spotlight_Photos
 'Appends the .jpg extension to the files so that they show up as pictures
